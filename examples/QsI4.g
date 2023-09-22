@@ -32,4 +32,5 @@ for group in groups do
 return [];
 end;
 
-#Qs_I_4_b(23) -> [ ] 
+# gap> Qs_I_4_b(23);
+# [ ] 
