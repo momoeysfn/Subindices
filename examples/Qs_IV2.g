@@ -12,7 +12,8 @@ od;
 return [];
 end;
 
-# Qs_IV2_p1(23) -> [ ]
+# gap> Qs_IV2_p1(23);
+# [ ]
 
 Qs_IV2_p2_minus:=function(n)
 local A,groups,ridminus,lidminus,group,subsets;
@@ -30,7 +31,8 @@ od;
 return [];
 end;
 
-# Qs_IV2_p2_minus(18) -> [ ]
+# gap> Qs_IV2_p2_minus(18);
+# [ ]
 
 Qs_IV2_p2_plus:=function(n)
 local A,groups,ridplus,lidplus,group,subsets;
@@ -48,4 +50,5 @@ od;
 return [];
 end;
 
-# Qs_IV2_p2_plus(18) -> [ ]
+# gap> Qs_IV2_p2_plus(18);
+# [ ]
