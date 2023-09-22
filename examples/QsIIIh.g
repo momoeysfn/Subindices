@@ -1,4 +1,4 @@
-#(f) LD(2, A) = G and (A is right index stable with) Rid(A) != 2.
+#LD(2, A) = G and (A is right index stable with) Rid(A) != 2.
 #Code :
 Qs_III_h:=function(n)
 local ridpm,A,group;
