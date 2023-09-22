@@ -38,6 +38,8 @@ return Set(rsf);
 end;
 
 # Noted Counterexamples for Theorem 3.1
+# RBSFRandom(G,A) returns a random right sub-factors of G related to A
+# Noted Counterexamples for Theorem 3.1
 # gap> G:=SmallGroup(56,11);;
 # gap> Print(StructureDescription(G)); 
 # "(C2 x C2 x C2) : C7"
