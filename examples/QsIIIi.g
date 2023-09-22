@@ -28,3 +28,5 @@ for group in groups do
 od;
 return [];
 end;
+# gap> Qs_III_i(18);
+# [ ]
