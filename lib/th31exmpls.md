@@ -1,6 +1,6 @@
 # Examples for Theorem 3.1 - Step 5 - Case 2
 
-**Note** `RBSFRandom(G, A)` returns a random right sub-factor of the group `G` related to `A`.
+**Note:** `RBSFRandom(G, A)` returns a random right sub-factor of the group `G` related to `A`.
 
 ### `(C2 x C2 x C2) : C7`
 
