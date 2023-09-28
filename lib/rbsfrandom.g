@@ -1,3 +1,4 @@
+# RBSFRandom(group, subsetA) returns a random right sub-factor of the group G related to A by using the constructive method from Theorem 2.2
 RBSFRandom:=function(group, subsetA)
 local g0,branch,rsf,BR,final,remain,g,LCA,lc_current,lc_previous;
 LCA:=LC(group, subsetA);
