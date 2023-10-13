@@ -8,6 +8,7 @@ The package has been developed with the specific goal of providing tools and sol
 - [Subindices and subfactors of finite groups](https://doi.org/10.1080/00927872.2023.2168685)
 
 This package has been used for the complete characterization of finite index stable groups.
+**Research Paper:** [Computational aspects of subindices and subfactors with characterization of finite index stable groups](https://arxiv.org/abs/2310.03438)
 
 ## Documentation 
 
