@@ -15,6 +15,7 @@ psgindexstable:=[]; # Groups that all their proper subgroups are index stable.
 for group in validsubgroups do
 	Add(validsubgroupsId,IdGroup(group));
 od;
+groups:=Filtered(groups,G->Order(Center(G))<6 or IdGroup(Center(G)) in validsubgroupsId); # Exclude groups with non index stable centers.
 for group in groups do
 	allsubgroups:=AllSubgroups(group);
 	flag:=1;
