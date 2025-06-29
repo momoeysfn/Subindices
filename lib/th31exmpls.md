@@ -1,7 +1,40 @@
 # Examples for Theorem 3.1 - Step 5 - Case 2
 
 **Note:** `RBSFRandom(G, A)` returns a random right sub-factor of the group `G` related to `A`.
-
+### `C7 x C7`
+```gap
+gap> G:=SmallGroup(49,2);
+gap> StructureDescription(G);
+"C7 x C7"
+gap> e:=One(G);x:=G.1;;y:=G.2;;
+gap> A:=[e,x,y];
+[ <identity> of ..., f1, f2 ]
+gap> RBSFRandom(G,A);
+[ <identity> of ..., f1^2, f1*f2^2, f1^4, f1^3*f2^2, f1*f2^4, f1^5*f2^2, f1^2*f2^5, f1^4*f2^4, f1^6*f2^4,
+  f1^6*f2^6 ]
+gap> B:=last;;
+gap> Size(B);
+11
+gap> M:=List(Cartesian(A, B), pair -> pair[1] * pair [2]);;
+gap> Size(M)=Size(A)*Size(B);
+true
+gap> U:=Difference(G,M);;
+gap> ForAll(U,u->not IsEmpty(Intersection(List(A,a->a*u),M)));
+true
+gap> RBSFRandom(G,A);
+[ <identity> of ..., f2^2, f1^2*f2^2, f1^2*f2^4, f1^2*f2^6, f1^3, f1^4*f2, f1^4*f2^4, f1^5*f2^2, f1^6*f2^5 ]
+gap> B:=last;
+[ <identity> of ..., f1^2, f1*f2^2, f1^4, f1^3*f2^2, f1*f2^4, f1^5*f2^2, f1^2*f2^5, f1^4*f2^4, f1^6*f2^4,
+  f1^6*f2^6 ]
+gap> Size(B);
+10
+gap> M:=List(Cartesian(A, B), pair -> pair[1] * pair [2]);;
+gap> Size(M)=Size(A)*Size(B);
+true
+gap> U:=Difference(G,M);;
+gap> ForAll(U,u->not IsEmpty(Intersection(List(A,a->a*u),M)));
+true
+```
 ### `(C2 x C2 x C2) : C7`
 
 ```gap
