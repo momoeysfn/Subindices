@@ -23,9 +23,7 @@ gap> ForAll(U,u->not IsEmpty(Intersection(List(A,a->a*u),M)));
 true
 gap> RBSFRandom(G,A);
 [ <identity> of ..., f2^2, f1^2*f2^2, f1^2*f2^4, f1^2*f2^6, f1^3, f1^4*f2, f1^4*f2^4, f1^5*f2^2, f1^6*f2^5 ]
-gap> B:=last;
-[ <identity> of ..., f1^2, f1*f2^2, f1^4, f1^3*f2^2, f1*f2^4, f1^5*f2^2, f1^2*f2^5, f1^4*f2^4, f1^6*f2^4,
-  f1^6*f2^6 ]
+gap> B:=last;;
 gap> Size(B);
 10
 gap> M:=List(Cartesian(A, B), pair -> pair[1] * pair [2]);;
