@@ -47,5 +47,4 @@ true
 gap> U:=Difference(G,M);;
 gap> ForAll(U,u->not IsEmpty(Intersection(List(A,a->a*u),M)));
 true
-gap>
 ```
