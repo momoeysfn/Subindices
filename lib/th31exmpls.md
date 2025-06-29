@@ -24,15 +24,6 @@ true
 gap> U:=Difference(G,M);;
 gap> ForAll(U,u->not IsEmpty(Intersection(List(A,a->a*u),M)));
 true
-gap> B:=[e,y*z*t,y*z*t^3,t^5,x*y*t^6];
-gap> Size(B);
-5
-gap> M:=List(Cartesian(A, B), pair -> pair[1] * pair [2]);;
-gap> Size(M)=Size(A)*Size(B);
-true
-gap> U:=Difference(G,M);;
-gap> ForAll(U,u->not IsEmpty(Intersection(List(A,a->a*u),M)));
-true
 gap> B:=[t,x,t^3,y*z*t^2];
 gap> Size(B);
 4
