@@ -35,5 +35,5 @@ if flag=0 then
 fi;
 end;
 
-# gap> Qs_III_c(27);
+# gap> Qs_III_c(24);
 # [ ]
